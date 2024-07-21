@@ -5,16 +5,18 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Lionic</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 	<header class="header">
-		<div class="container">
+		<div class="container flex header-container">
 			<a href="#" class="header-logo">
 				<img src="img/logo.svg" class="header-logo" alt="Logo">
 			</a>
 			<nav class="header-nav">
-				<ul class="header-list">
+				<ul class="list-reset header-list flex">
 					<li class="header-list-item">
 						<a href="#home" class="header-link">
 							Home
@@ -47,14 +49,14 @@
 					</li>
 				</ul>
 			</nav>
-			<button class="btn header-btn">
+			<button class="btn-reset btn header-btn">
 				Free trial
 			</button>
 		</div>
 	</header>
 
 	<main class="main">
-		<section id="hero" class="hero">
+		<section id="hero" class="hero flex">
 			<div class="container">
 				<div class="hero-content">
 					<h1 class="hero-title">
@@ -64,16 +66,16 @@
 						Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
 						ut&nbsp;laoreet dolore.
 					</p>
-					<button class="btn hero-btn">
+					<button class="btn-reset btn hero-btn">
 						FREE 30&nbsp;DAY TRIAL
 					</button>
-					<span class="hero-secure">
+					<div class="hero-secure">
 						SSL secured connection
-					</span>
+					</div>
 				</div>
 			</div>
 		</section>
-		<section id="services" class="services">
+		<section id="services" class="services section-offset">
 			<div class="container">
 				<h2 class="section-title services-title">
 					Services
@@ -81,8 +83,8 @@
 				<p class="section-descr services-descr">
 					Lionic guides you on&nbsp;making decisions for all aspects of&nbsp;your end-of-life plans.
 				</p>
-				<ul class="services-items">
-					<li class="services-item">
+				<ul class="list-reset services-items flex">
+					<li class="services-item flex">
 						<img class="services-item-icon" src="img/serv-1.svg" alt="logo-1">
 						<h3 class="services-item-title">
 							Your Legacy
@@ -91,7 +93,7 @@
 							Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
 						</p>
 					</li>
-					<li class="services-item">
+					<li class="services-item flex">
 						<img class="services-item-icon" src="img/serv-2.svg" alt="logo-2">
 						<h3 class="services-item-title">
 							Your Health
@@ -100,7 +102,7 @@
 							Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
 						</p>
 					</li>
-					<li class="services-item">
+					<li class="services-item flex">
 						<img class="services-item-icon" src="img/serv-3.svg" alt="logo-3">
 						<h3 class="services-item-title">
 							Funeral &amp;&nbsp;Memorial
@@ -109,7 +111,7 @@
 							Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
 						</p>
 					</li>
-					<li class="services-item">
+					<li class="services-item flex">
 						<img class="services-item-icon" src="img/serv-4.svg" alt="logo-4">
 						<h3 class="services-item-title">
 							Legal &amp;&nbsp;Financial
@@ -121,14 +123,14 @@
 				</ul>
 			</div>
 		</section>
-		<section id="arcticles" class="arcticles">
+		<section id="arcticles" class="arcticles section-offset">
 			<div class="container">
 				<h2 class="section-title arcticles-titile">
 					Arcticles
 				</h2>
-				<ul class="arcticles-list">
+				<ul class="list-reset arcticles-list flex">
 					<li class="arcticles-item">
-						<arcticle class="blog-preview">
+						<arcticle class="blog-preview flex">
 							<img src="/img/blog-1.jpg" alt="Blog photo 1" class="blog-preview-image">
 							<div class="blog-preview-text">
 								<time datetime="" class="blog-preview-time" datetime="2024-07-14 19:32">
@@ -144,7 +146,7 @@
 						</arcticle>
 					</li>
 					<li class="arcticles-item">
-						<arcticle class="blog-preview">
+						<arcticle class="blog-preview flex">
 							<img src="/img/blog-2.jpg" alt="Blog photo 2" class="blog-preview-image">
 							<div class="blog-preview-text">
 								<time datetime="" class="blog-preview-time" datetime="2024-07-14 19:32">
@@ -160,7 +162,7 @@
 						</arcticle>
 					</li>
 					<li class="arcticles-item">
-						<arcticle class="blog-preview">
+						<arcticle class="blog-preview flex">
 							<img src="/img/blog-3.jpg" alt="Blog photo 3" class="blog-preview-image">
 							<div class="blog-preview-text">
 								<time datetime="" class="blog-preview-time" datetime="2024-07-14 19:32">
@@ -176,7 +178,7 @@
 						</arcticle>
 					</li>
 					<li class="arcticles-item">
-						<arcticle class="blog-preview">
+						<arcticle class="blog-preview flex">
 							<img src="/img/blog-4.jpg" alt="Blog photo r" class="blog-preview-image">
 							<div class="blog-preview-text">
 								<time datetime="" class="blog-preview-time" datetime="2024-07-14 19:32">
@@ -194,19 +196,19 @@
 				</ul>
 			</div>
 		</section>
-		<section id="clients" class="clients">
+		<section id="clients" class="clients section-offset">
 			<h2 class="section-title clients-title">
 				Clients
 			</h2>
-			<ul class="clients-list">
-				<li class="clients-item">
+			<ul class="list-reset clients-list flex">
+				<li class="clients-item flex">
 					<p class="clients-item-descr">
 						Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu
 						feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit odio dignissim qui
 						blandit molestie consequat.
 					</p>
-					<div class="clients-user">
-						<div class="clients avatar">
+					<div class="clients-user flex">
+						<div class="clients-avatar">
 							<img src="/img/client-1.jpg" alt="John Armstrong">
 						</div>
 						<div class="clients-text">
@@ -218,13 +220,13 @@
 							</span>
 						</div>
 					</div>
-				<li class="clients-item">
+				<li class="clients-item flex">
 					<p class="clients-item-descr">
 						Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu
 						feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit odio dignissim qui
 						blandit molestie consequat.
 					</p>
-					<div class="clients-user">
+					<div class="clients-user flex">
 						<div class="clients avatar">
 							<img src="/img/client-2.jpg" alt="Elizabeth Martin">
 						</div>
@@ -237,13 +239,13 @@
 							</span>
 						</div>
 					</div>
-				<li class="clients-item">
+				<li class="clients-item flex">
 					<p class="clients-item-descr">
 						Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu
 						feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit odio dignissim qui
 						blandit molestie consequat.
 					</p>
-					<div class="clients-user">
+					<div class="clients-user flex">
 						<div class="clients avatar">
 							<img src="/img/client-3.jpg" alt="Robin Soutby">
 						</div>
@@ -258,44 +260,46 @@
 					</div>
 			</ul>
 		</section>
-		<section id="contacts" class="contacts">
+		<section id="contacts" class="contacts section-offset">
 			<div class="container">
 				<h2 class="section-title contacts-title">
-					<address class="contacts-address">
-						<ul class="contacts-list">
-							<li class="contacts-item">
-								<strong class="contacts-item-caption">
-									Visit Us
-								</strong>
-								<p class="contacts-item-text">
-									Duis autem vel eum iriure dolor in hendrerit in vulputate velit.
-								</p>
-							</li>
-							<li class="contacts-item">
-								<strong class="contacts-item-caption">
-									Call Us
-								</strong>
-								<a href="tel:+79876543210" class="contacts-item-link">
-									+7 (987) 654-32-10
-								</a>
-								<a href="tel:+71234567890" class="contacts-item-link">
-									+7 (123) 456-78-90
-								</a>
-							</li>
-							<li class="contacts-item">
-								<strong class="contacts-item-caption">
-									Email Us
-								</strong>
-								<a href="mailto:example@example.com" class="contacts-item-link">
-									example@example.com
-								</a>
-								<a href="mailto:support@example.com" class="contacts-item-link">
-									support@example.com
-								</a>
-							</li>
-						</ul>
-					</address>
+					Contacts
 				</h2>
+				<address class="contacts-address">
+					<ul class="list-reset contacts-list">
+						<li class="contacts-item">
+							<strong class="contacts-item-caption">
+								Visit Us
+							</strong>
+							<p class="contacts-item-text">
+								Duis autem vel eum iriure dolor in hendrerit in vulputate velit.
+							</p>
+						</li>
+						<li class="contacts-item">
+							<strong class="contacts-item-caption">
+								Call Us
+							</strong>
+							<a href="tel:+79876543210" class="contacts-item-link">
+								+7 (987) 654-32-10
+							</a>
+							<a href="tel:+71234567890" class="contacts-item-link">
+								+7 (123) 456-78-90
+							</a>
+						</li>
+						<li class="contacts-item">
+							<strong class="contacts-item-caption">
+								Email Us
+							</strong>
+							<a href="mailto:example@example.com" class="contacts-item-link">
+								example@example.com
+							</a>
+							<a href="mailto:support@example.com" class="contacts-item-link">
+								support@example.com
+							</a>
+						</li>
+					</ul>
+				</address>
+				</>
 			</div>
 		</section>
 		<!-- <section id="join-us" class="join-us">
@@ -314,7 +318,7 @@
 			</div>
 			<div class="footer-right">
 				<nav class="footer-nav">
-					<ul class="footer-list">
+					<ul class="list-reset footer-list">
 						<li class="footer-item">
 							<a href="#" target="_blank" class="footer-link">About Us</a>
 						</li>
@@ -329,7 +333,7 @@
 						</li>
 					</ul>
 				</nav>
-				<ul class="social">
+				<ul class="list-reset social">
 					<li class="social-item"><a href="#" class="social-link social-link-tw"></a></li>
 					<li class="social-item"><a href="#" class="social-link social-link-linkedin"></a></li>
 					<li class="social-item"><a href="#" class="social-link social-link-mail"></a></li>
