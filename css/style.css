@@ -42,9 +42,13 @@ img {
 }
 
 body {
-	min-width: 1200px;
+	min-width: 320px;
 	font-family: "OpenSans", sans-serif;
 	font-weight: 400;
+}
+
+:root {
+	--gap: 30px;
 }
 
 /* glob */
@@ -66,9 +70,10 @@ body {
 }
 
 .container {
-	width: 1200px;
+	max-width: 1200px;
 	padding: 0 15px;
 	margin: 0 auto;
+	width: 100%;
 }
 
 .section__title {
@@ -214,7 +219,7 @@ body {
 }
 
 .hero__content {
-	max-width: 50%;
+	min-width: 50%;
 	flex-direction: column;
 	align-items: flex-start;
 }
@@ -273,23 +278,20 @@ body {
 	text-align: center;
 }
 
+.services__items {
+	--offsets: 3;
+	gap: var(--gap);
+	flex-wrap: wrap;
+}
+
 .services__item {
 	flex-direction: column;
 	align-items: center;
 	padding: 60px 30px;
-	width: 270px;
+	width: calc((100% - (var(--gap) * var(--offsets))) / (var(--offsets) + 1));
 	border: 1px solid #e4e4e4;
 	border-radius: 5px;
 	transition: background-color .3s ease-in-out, border-color .3s ease-in-out;
-}
-
-.services__item:hover {
-	border-color: #3172B9;
-	background-color: #3172B9;
-}
-
-.services__item:not(:nth-child(4n)) {
-	margin-right: 30px;
 }
 
 .services__item-icon {
@@ -307,6 +309,7 @@ body {
 	font-weight: 600;
 	font-size: 20px;
 	line-height: 130%;
+	text-align: center;
 	color: #1c1c1c;
 	transition: color .3s ease-in-out;
 }
@@ -321,6 +324,10 @@ body {
 
 .services__item:hover .services__item-icon>g>path {
 	fill: #fff;
+}
+
+.services__item:hover {
+	background-color: #3172B9;
 }
 
 .services__item-descr {
@@ -339,16 +346,14 @@ body {
 
 .arcticles__list {
 	flex-wrap: wrap;
+	--offsets: 1;
+	gap: var(--gap);
 }
 
 .arcticles__item {
 	width: 570px;
 	margin-bottom: 30px;
-
-}
-
-.arcticles__item:not(:nth-child(2n)) {
-	margin-right: 30px;
+	width: calc((100% - (var(--offsets) * var(--gap))) / (var(--offsets) + 1));
 }
 
 .blog__preview {
@@ -356,6 +361,7 @@ body {
 	border: 1px solid #e4e4e4;
 	border-radius: 5px;
 	overflow: hidden;
+	height: 100%;
 }
 
 .blog__preview-text {
@@ -450,14 +456,16 @@ body {
 
 .clients__item {
 	flex-direction: column;
-	width: 370px;
+	width: calc((100% - (var(--gap) * var(--offsets))) / (var(--offsets) + 1));
 	padding: 50px 36px;
 	padding-bottom: 30px;
 	border: 1px solid #e4e4e4;
 }
 
-.clients__item:not(:nth-child(3n)) {
-	margin-right: 30px;
+.clients__list {
+	--offsets: 2;
+	flex-wrap: wrap;
+	gap: var(--gap);
 }
 
 .clients__item-descr {
@@ -516,15 +524,17 @@ body {
 
 .contacts__item {
 	flex-direction: column;
-	width: 370px;
+	width: calc((100% - (var(--gap) * var(--offsets))) / (var(--offsets) + 1));
 	background-repeat: no-repeat;
 	background-position: left top;
 	background-size: 20px 29px;
 	padding-top: 19px;
 }
 
-.contacts__item:not(:nth-child(3n)) {
-	margin-right: 30px;
+.contacts__list {
+	--offsets: 2;
+	flex-wrap: wrap;
+	gap: var(--gap);
 }
 
 .contacts__item-visit {
@@ -576,10 +586,6 @@ body {
 	color: #0E3B6C;
 }
 
-.contacts__item-link:not(:last-child) {
-	margin-bottom: 5px;
-}
-
 /* Join us */
 .join-us {
 	border-bottom: 1px solid #C4C4C4;
@@ -606,7 +612,6 @@ body {
 	padding: 16px 28px;
 	width: 251px;
 	height: 60px;
-	margin-bottom: 19px;
 	transition: background-color .3s ease-in-out, border-color .3s ease-in-out;
 }
 
@@ -695,6 +700,7 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	gap: 14px;
 }
 
 .form__right {
@@ -764,7 +770,7 @@ body {
 	margin-right: 56px;
 }
 
-.social-link {
+.social__link {
 	display: flex;
 	width: 24px;
 	height: 24px;
@@ -772,36 +778,40 @@ body {
 	margin-right: 32px;
 }
 
-.social-link svg {
+.social__link svg {
 	fill: #000;
 	transition: fill .3s ease-in-out;
 }
 
-.social-link-mail svg {
+.link__mail svg {
 	fill: transparent;
 	stroke: #000;
 	transition: stroke .3s ease-in-out;
 }
 
-.social-link:focus {
+.social__link:focus {
 	outline-offset: 2px;
 	outline: 1px solid #71A7E2;
 }
 
-.social-link:hover svg {
+.social__link:hover svg {
 	fill: #71A7E2;
 }
 
-.social-link-mail:hover svg {
+.link__mail:hover svg {
 	fill: transparent;
 	stroke: #71A7E2;
 }
 
-.social-link:active svg {
+.social__link:active svg {
 	fill: #3172B9;
 }
 
-.social-link-mail:active svg {
+.link__mail:active svg {
 	fill: transparent;
 	stroke: #3172B9;
+}
+
+.burger {
+	display: none;
 }
